@@ -1,6 +1,9 @@
 import "../styles/about.css";
-
+import { useEffect } from "react";
 function About() {
+  useEffect(() => {
+    document.title = "About Vify - Vify shopify app";
+  }, []);
   return (
     <div className="about-container">
       {/* Hero Section */}

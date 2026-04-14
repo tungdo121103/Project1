@@ -17,6 +17,10 @@ function Home() {
       }
     }
   }, [location]);
+  useEffect(() => {
+    document.title =
+      "Shopify Order Printer & PDF Invoice App | Easy Customization";
+  }, []);
 
   return (
     <div className="HomePage">
@@ -53,7 +57,7 @@ function Home() {
       <section className="features-section" id="features">
         <Features />
       </section>
-      <section className="faq-section"  id="faq">
+      <section className="faq-section" id="faq">
         <Faq />
       </section>
     </div>

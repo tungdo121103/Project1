@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import anh from "../assets/anhwhychoose1.png";
 import "../styles/whychoose.css";
 function WhyChoose() {
@@ -10,11 +11,16 @@ function WhyChoose() {
     "Multiple languages",
   ];
   const [activeTab, setActiveTab] = useState(1);
+  useEffect(() => {
+    document.title = "Why Choose Vify - Vify shopify app";
+  }, []);
   return (
     <section className="why-choose-section">
       <div className="whychoose-page">
         <h1>Why Choose Vify</h1>
-        <p><a href="/">Home</a> - Why Choose Vify</p>
+        <p>
+          <a href="/">Home</a> - Why Choose Vify
+        </p>
       </div>
       <div className="container">
         <div className="upper-content">

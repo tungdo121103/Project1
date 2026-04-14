@@ -14,6 +14,7 @@ import sell3 from "../assets/sell3.png";
 import order1 from "../assets/order1.png";
 import order2 from "../assets/order2.png";
 import order3 from "../assets/order3.png";
+import { useEffect } from "react";
 
 function Partners() {
   const categories = [
@@ -278,7 +279,9 @@ function Partners() {
 
   const currentCategory = categories[activeIndex];
   const currentPartners = partnerData[currentCategory] || [];
-
+  useEffect(() => {
+    document.title = "Partners - Vify shopify app";
+  }, []);
   return (
     <div className="partners-container">
       <div className="partners-page">

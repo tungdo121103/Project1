@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import blog1 from "../assets/blog1.png";
 import blog2 from "../assets/blog2.png";
 import blog3 from "../assets/blog3.png";
-
+import { useEffect } from "react";
 function Blog() {
   //
   const posts = [
@@ -42,7 +42,9 @@ function Blog() {
       desc: "Are you running a business on the Shopify platform? If so, below are some helpful articles covering the latest Shopify news, as well as practical insights on managing and operating your store effectively. In particular, Vify provides in-depth guides and tips on how to use and optimize popular apps that most Shopify stores rely on…",
     },
   ];
-
+  useEffect(() => {
+    document.title = "Blog - Vify shopify app";
+  }, []);
   return (
     <>
       {/* HEADER */}
