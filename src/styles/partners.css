@@ -277,3 +277,30 @@
 .partners-card-btn-more:hover {
   background:#f59c2f; /* màu đậm hơn */
 }
+
+/* 5. Pagination Dots */
+.partners-pagination-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px; /* Khoảng cách giữa các chấm */
+  margin-top: 30px;
+}
+
+.partners-dot-item {
+  width: 10px;
+  height: 10px;
+  background-color: #f4d9b5; /* Màu cam rất nhạt cho các nút chưa chọn */
+  border-radius: 30%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.partners-dot-item.active {
+  background-color: #f3b55a; /* Màu cam đậm của theme khi được chọn */
+  transform: scale(1.2); /* Phóng to nhẹ chấm đang chọn */
+}
+
+.partners-dot-item:hover {
+  background-color: #f3b55a;
+  opacity: 0.7;
+}

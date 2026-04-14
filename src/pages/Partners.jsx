@@ -336,6 +336,15 @@ function Partners() {
             </div>
           ))}
         </div>
+        <div className="partners-pagination-row">
+          {categories.map((_, index) => (
+            <div
+              key={index}
+              className={`partners-dot-item ${activeIndex === index ? "active" : ""}`}
+              onClick={() => setActiveIndex(index)}
+            ></div>
+          ))}
+        </div>
       </div>
     </div>
   );
