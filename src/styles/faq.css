@@ -1,0 +1,222 @@
+  .faq-section {
+    background: #24323e;
+    padding: 20px 0 0;
+    color: white;
+  }
+
+  .faq-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+  }
+
+  /* LEFT */
+  .faq-left {
+    flex: 0.9;
+  }
+
+  .faq-sub {
+    color: #ff5e3a;
+    font-size: 13px;
+    margin-bottom: 10px;
+    letter-spacing: 1.px;
+  }
+
+  .faq-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  /* ITEM */
+  .faq-item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  /* QUESTION */
+  .faq-question {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .faq-question span {
+    font-size: 14px;
+  }
+
+  /* ICON */
+  .faq-icon {
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ANSWER */
+  .faq-answer {
+    padding: 15px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+.faq-block strong {
+  color: #d6d1cd; /* Thay màu bạn muốn vào đây, ví dụ màu cam */
+}
+  /* BLOCK */
+  .faq-block {
+    font-size: 13px;
+    border-left: 2px dotted #ccc;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* LIST */
+  .faq-list {
+    font-size: 13px;
+    color:#909090;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .faq-list li {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  /* RIGHT IMAGE */
+  .faq-right {
+    flex: 1.1; /* to hơn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq-right img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 6px;
+  }
+
+  /* BLOG */
+  .blog-section {
+    margin-top: 40px;
+    padding: 80px 0;
+    text-align: center;
+    background: #fff;
+  }
+
+  .blog-sub {
+    color: #ff5e3a;
+    font-size: 15px;
+    font-weight: 650;
+    letter-spacing: 2px;
+  }
+
+  .blog-title {
+    color: #222; 
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .blog-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .blog-card {
+    width: 600px;
+    text-align: left;
+  }
+
+  .blog-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+
+  .blog-card h3 {
+    color: #222; 
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .blog-card h3 a {
+    color: #1a1a1a;      /* màu chữ */
+    text-decoration: none; /* bỏ gạch chân */
+    transition: 0.3s;
+  }
+
+  .blog-card h3 a:hover {
+    color: #ff5e3a;      /* hover màu cam */
+  }
+  .blog-card p a {
+    color: #1a1a1a;      /* màu chữ */
+    text-decoration: none; /* bỏ gạch chân */
+    transition: 0.3s;
+  }
+
+  .blog-card p a:hover {
+    color: #ff5e3a;      /* hover màu cam */
+  }
+
+  .blog-card .meta {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+  }
+
+  .blog-card .desc {
+    font-size: 15px;
+    color: #878080;
+  }
+
+  /* CTA */
+  .cta-section {
+    background: #fff;   /* 👈 nền xám sáng rõ ràng */
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;            /* 👈 tránh bị đè */
+  }
+
+  /* SUB TITLE */
+  .cta-sub {
+    color: #ff5e3a;
+    font-size: 15px;
+    font-weight: 650;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  /* TITLE */
+  .cta-section h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+  }
+
+  /* BUTTON WRAP */
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* BUTTON CHÍNH */
+  .btn-orange {
+    background: #eaab47;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  .btn-orange:hover {
+    background: #e69500;
+  }

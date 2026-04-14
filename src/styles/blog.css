@@ -1,0 +1,180 @@
+.blog-page {
+  margin-top: -10px; /* đè lên header */
+  padding-top: 10px; /* đẩy chữ xuống trong vùng cam */
+  background-color: #454240;
+  color: white;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.blog-page h1{
+  font-size: 40px;
+  font-weight: 700;
+}
+.blog-page a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+/* ===== CONTENT ===== */
+.blog-container {
+  background: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* TITLE */
+.blog-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.blog-desc {
+  max-width: 1300px;
+  margin: 0 auto 40px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.blog-author {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.blog-author:hover {
+  color: red; 
+}
+
+/* ===== GRID ===== */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+   max-width: 10000px;   /* 👈 QUAN TRỌNG */
+  margin: 0 auto;
+}
+
+
+.blog-card h3,
+.blog-meta,
+.blog-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+}
+/* ===== CARD ===== */
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  transition: 0.3s;
+  max-width: 480px;   /* 👈 giới hạn card */
+  margin: 0 auto;
+}
+
+/* hover đẹp */
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== IMAGE (FIX CHÍNH) ===== */
+.blog-card img {
+  width: 100%;
+  height: 220px;
+
+  object-fit: contain;     /* ảnh không bị méo */
+  object-position: center; /* căn giữa */
+
+  background: #f5f5f5;     /* nền cho ảnh nhỏ */
+  display: block;
+
+  transition: 0.3s;
+}
+
+/* hover zoom nhẹ */
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== TEXT ===== */
+.blog-card h3 {
+  font-size: 18px;
+  margin: 15px;
+}
+
+.blog-meta {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.blog-meta span {
+  font-weight: 600;
+  color: #000;
+}
+
+/* mô tả */
+.blog-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  padding: 0 15px 20px;
+
+  /* giới hạn dòng cho đẹp */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Show more */
+
+.blog-showmore-wrap {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.blog-showmore-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 15px;
+
+  background: #f8c273;
+  color: white;
+  text-decoration: none;
+
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.blog-showmore-btn:hover {
+  background: #f59c2f;
+}
+
+.blog-line {
+  width: 1400px;
+  height: 1px;
+  background: #d8d7d5;
+  margin: 30px auto 0;
+}

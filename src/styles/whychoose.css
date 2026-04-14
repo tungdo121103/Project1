@@ -1,0 +1,368 @@
+.whychoose-page {
+  margin-top: -110px; /* đè lên header */
+  padding-top: 30px; /* đẩy chữ xuống trong vùng cam */
+  background-color: #454240;
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.whychoose-page h1{
+  font-size: 35px;
+  font-weight: 700;
+}
+.whychoose-page a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+hr {
+  display: block;
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin-top: 80px !important;
+}
+
+/*whyChooseVify */
+
+.why-choose-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+/* Layout 2 cột */
+.upper-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 100px; /* Khoảng cách xuống phần Metrics */
+}
+
+.image-box {
+  flex: 1;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 4px; /* Bo góc nhẹ như trong ảnh */
+  display: block;
+}
+
+.text-box {
+  flex: 1;
+}
+
+.text-box .title {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.text-box .description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* List tính năng với icon check */
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #ff5e3a; /* Màu cam đỏ */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff5e3a;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+/* Phần tiêu đề Metrics phía dưới */
+.metrics-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metrics-header .sub-title {
+  color: #ff5e3a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-top: -40px;
+}
+
+.metrics-header .main-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.metrics-header .sub-description {
+  font-size: 17px;
+  color: #777;
+  line-height: 1.5;
+  white-space: nowrap;
+  margin-bottom: -20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+  .upper-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .image-box,
+  .text-box {
+    width: 100%;
+  }
+
+  .metrics-header .main-title {
+    font-size: 28px;
+  }
+}
+/* Stats Section - Nền màu vàng nhạt như trong ảnh */
+.stats-section-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #fde6b3; /* Màu vàng nhạt giống ảnh */
+  padding: 100px 20px;
+  margin: 50px -100vw; /* Kỹ thuật tràn viền ra hết màn hình */
+  padding-left: 100vw;
+  padding-right: 100vw;
+  text-align: center;
+}
+
+.stat-box-item h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.orange-line {
+  width: 40px;
+  height: 2px;
+  background: #333; /* Đường kẻ tối dưới con số */
+  margin: 0 auto 15px;
+}
+
+.stat-box-item p {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Key Partners Area */
+.partners-area {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: -90px; /* Đảm bảo không có margin trên */
+  margin-bottom: 15px; /* Khoảng cách từ chữ này xuống dòng mô tả phía dưới */
+}
+
+.partners-desc {
+  font-size: 13px;
+  color: #666;
+  max-width: 850px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+/* Tabs UI chuẩn */
+
+.custom-tabs {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* NAV */
+.tabs-nav {
+  display: flex;
+  gap: 2px;
+  margin-bottom: -1px;
+}
+
+/* TAB */
+.nav-link {
+  width: 70px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid #ddd;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px; /* 👈 vuông hơn (giảm bo góc) */
+  color: #555;
+  font-size: 10px !important;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+/* TAB ACTIVE */
+.nav-link.active {
+  background: #dcd7d7; /* 👈 sáng */
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+/* TAB KHÔNG ACTIVE hover */
+.nav-link:hover:not(.active) {
+  background: #d2cdcd;
+  color: #333;
+}
+
+/* CONTENT */
+.tabs-content-box {
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 0 8px 8px 8px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; /* 👈 căn giữa theo chiều dọc */
+}
+
+/* TEXT */
+.shortcode-text {
+  color: #555;
+  font-size: 12px;
+  font-family: monospace;
+}
+body {
+  padding-top: 90px; /* đúng bằng chiều cao header */
+}
+/*Phần Contact*/
+.contactWhyChoose-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Title */
+.contactWhyChoose-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.contactWhyChoose-sub {
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+/* Form */
+.contactWhyChoose-form {
+  width: 100%;
+}
+
+/* 2 cột input */
+.form-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* Input style */
+.contactWhyChoose-form input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+  background: #fff;
+}
+
+/* focus đẹp hơn */
+.contactWhyChoose-form input:focus,
+.contactWhyChoose-form textarea:focus {
+  border-color: #f59c2f;
+  box-shadow: 0 0 0 2px rgba(245, 156, 47, 0.1);
+}
+
+/* textarea */
+.contactWhyChoose-form textarea {
+  width: 100%;
+  height: 220px;
+  padding: 14px 16px;
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+}
+
+/* button wrapper */
+.form-btn {
+  display: flex;
+  justify-content: flex-end; /* đẩy sang phải như ảnh */
+  margin-top: 20px;
+}
+
+/* button */
+.form-btn button {
+  padding: 10px 3px;
+  border: 1px solid #ddd;
+  background: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* hover button */
+.form-btn button:hover {
+  background: #1b1106;
+  color: white;
+  border-color: #362919;
+}
+
+/* phần cuối của WhyChoose */
